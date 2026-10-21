@@ -85,7 +85,7 @@ export default function HomePage() {
               {[
                 { step: '1', icon: Phone, title: 'Connect with a Navigator', desc: 'Call, text, or message your dedicated care navigator anytime. They get to know your family and your needs.' },
                 { step: '2', icon: BookOpen, title: 'Get a Personalized Care Plan', desc: 'Your navigator researches options, vets providers, and creates a customized care plan for your situation.' },
-                { step: '3', icon: Heart, title: 'Ongoing Support & Guidance', desc: 'As your needs change, your navigator adapts your plan. We're with you for the long haul.' },
+                { step: '3', icon: Heart, title: 'Ongoing Support & Guidance', desc: 'As your needs change, your navigator adapts your plan. We&apos;re with you for the long haul.' },
               ].map((step) => (
                 <div key={step.step} className="text-center relative">
                   <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-extrabold text-white" style={{ backgroundColor: '#2D7D6F' }}>
@@ -114,7 +114,7 @@ export default function HomePage() {
               { title: 'Special Needs Support', desc: 'Resources and advocacy for children and adults with disabilities or special needs.' },
               { title: 'Mental Health Resources', desc: 'Connecting families with therapists, counselors, and mental health support services.' },
               { title: 'Newborn & Parental Leave', desc: 'Support for new parents navigating leave policies, newborn care, and postpartum resources.' },
-              { title: 'Crisis & Emergency Care', desc: 'Immediate support when unexpected caregiving situations arise — we're here 24/7.' },
+              { title: 'Crisis & Emergency Care', desc: 'Immediate support when unexpected caregiving situations arise — we&apos;re here 24/7.' },
             ].map((care) => (
               <div key={care.title} className="bg-white p-6 rounded-xl border hover:shadow-md transition-shadow" style={{ borderColor: '#CCFBF1' }}>
                 <div className="flex items-start gap-3">

@@ -138,7 +138,7 @@ export default function HomePage() {
             {[
               { quote: 'My navigator found the perfect memory care facility for my mom in just 3 days. I was overwhelmed and they made it manageable.', name: 'Maria T.', role: 'Employee, Healthcare Sector' },
               { quote: 'As a working parent of a child with autism, Omohan has been a lifeline. They know every resource in our area.', name: 'David K.', role: 'Employee, Tech Industry' },
-              { quote: 'I didn't know where to start with newborn care. My navigator walked me through everything and I felt so supported.', name: 'Jennifer L.', role: 'New Parent, Finance Sector' },
+              { quote: 'I didn&apos;t know where to start with newborn care. My navigator walked me through everything and I felt so supported.', name: 'Jennifer L.', role: 'New Parent, Finance Sector' },
             ].map((t) => (
               <div key={t.name} className="p-8 rounded-2xl border" style={{ borderColor: '#CCFBF1', backgroundColor: '#F0FDF9' }}>
                 <div className="flex mb-4">

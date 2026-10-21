@@ -34,8 +34,8 @@ export default function TalkToSalesPage() {
           </div>
           <div className="relative z-10">
             <div className="mb-8">
-              <Image src="/logo.png" alt="Omohan" width={130} height={44} className="h-11 w-auto object-contain"
-                style={{ filter: 'brightness(0) invert(1)', opacity: 0.9 }} />
+              {/* Heart Leaf Logo — designed for dark backgrounds */}
+              <Image src="/logo-dark.png" alt="Omohan" width={140} height={44} className="h-11 w-auto object-contain" />
             </div>
             <p className="text-xs font-semibold uppercase tracking-widest mb-6" style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'Inter, sans-serif' }}>
               Book a Demo

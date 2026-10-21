@@ -31,10 +31,15 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
+            <Link href="/talk-to-sales"
+              className="ml-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-opacity hover:opacity-90"
+              style={{ color: '#0F6B57', border: '2px solid #0F6B57', fontFamily: 'Inter, sans-serif', backgroundColor: 'transparent' }}>
+              Talk to Sales
+            </Link>
             <Link href="/signup"
-              className="ml-4 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-opacity hover:opacity-90"
+              className="ml-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#2E9F87', fontFamily: 'Inter, sans-serif' }}>
-              Get Care Support
+              Employee Signup
             </Link>
           </div>
           <button className="md:hidden p-2 rounded-lg" onClick={() => setMobileOpen(!mobileOpen)} style={{ color: '#174B43' }}>
@@ -50,9 +55,13 @@ export default function Navbar() {
                   {label}
                 </Link>
               ))}
-              <Link href="/signup" className="block mt-3 px-4 py-3 rounded-xl text-sm font-semibold text-white text-center"
+              <Link href="/talk-to-sales" className="block mt-2 px-4 py-3 rounded-xl text-sm font-semibold text-center"
+                style={{ color: '#0F6B57', border: '2px solid #0F6B57' }} onClick={() => setMobileOpen(false)}>
+                Talk to Sales
+              </Link>
+              <Link href="/signup" className="block mt-2 px-4 py-3 rounded-xl text-sm font-semibold text-white text-center"
                 style={{ backgroundColor: '#2E9F87' }} onClick={() => setMobileOpen(false)}>
-                Get Care Support
+                Employee Signup
               </Link>
             </div>
           </div>

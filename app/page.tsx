@@ -10,7 +10,6 @@ export default function HomePage() {
 
       {/* ── HERO ── */}
       <section className="relative overflow-hidden py-24 lg:py-32" style={{ backgroundColor: '#DFF8F1' }}>
-        {/* Organic shape decorations */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full opacity-30" style={{ backgroundColor: '#2E9F87' }} />
           <div className="absolute -bottom-16 -left-16 w-72 h-72 rounded-full opacity-20" style={{ backgroundColor: '#0F6B57' }} />
@@ -19,13 +18,11 @@ export default function HomePage() {
 
         <div className="relative max-w-6xl mx-auto px-6 lg:px-12">
           <div className="max-w-3xl">
-            {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-8" style={{ backgroundColor: 'rgba(46,159,135,0.15)', color: '#0F6B57', fontFamily: 'Inter, sans-serif' }}>
               <Heart className="w-4 h-4" fill="#0F6B57" />
               Care Support for Every Employee
             </div>
 
-            {/* Headline */}
             <h1 style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 800, fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: 1.05, marginBottom: '1.5rem' }}>
               <span style={{ color: '#174B43', display: 'block' }}>Care Support for Every Family.</span>
               <span style={{ color: '#2E9F87', display: 'block' }}>At Every Stage of Life.</span>
@@ -39,12 +36,12 @@ export default function HomePage() {
               <Link href="/signup"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-white font-semibold transition-opacity hover:opacity-90"
                 style={{ backgroundColor: '#2E9F87', fontFamily: 'Inter, sans-serif', fontSize: '1rem' }}>
-                Get Care Support <ArrowRight className="w-4 h-4" />
+                Employee Signup <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link href="/product"
+              <Link href="/talk-to-sales"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold transition-colors"
                 style={{ border: '2px solid #0F6B57', color: '#0F6B57', fontFamily: 'Inter, sans-serif', fontSize: '1rem', backgroundColor: 'transparent' }}>
-                How It Works
+                Talk to Sales
               </Link>
             </div>
           </div>
@@ -55,7 +52,6 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Childcare Card */}
             <div className="p-8 rounded-2xl flex items-start gap-6" style={{ backgroundColor: '#DFF8F1' }}>
               <div className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: 'rgba(46,159,135,0.2)' }}>
                 <Baby className="w-7 h-7" style={{ color: '#0F6B57', strokeWidth: 1.75 }} />
@@ -71,7 +67,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Eldercare Card */}
             <div className="p-8 rounded-2xl flex items-start gap-6" style={{ backgroundColor: '#E8F5EC' }}>
               <div className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: 'rgba(15,107,87,0.15)' }}>
                 <UserCheck className="w-7 h-7" style={{ color: '#0F6B57', strokeWidth: 1.75 }} />
@@ -102,7 +97,6 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 relative">
-            {/* Connecting line */}
             <div className="hidden md:block absolute top-12 left-1/4 right-1/4 h-px" style={{ backgroundColor: '#2E9F87', opacity: 0.3 }} />
             {[
               { num: '1', icon: Heart, title: 'Tell us what you need', desc: 'Share your caregiving situation with your dedicated Omohan navigator.' },
@@ -165,11 +159,18 @@ export default function HomePage() {
               <p style={{ fontSize: '1.05rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.7, marginBottom: '2rem' }}>
                 Omohan is a voluntary employee benefit that helps working caregivers manage their responsibilities — so they can show up fully at work.
               </p>
-              <Link href="/signup"
-                className="inline-block px-7 py-3.5 rounded-xl font-semibold text-white transition-opacity hover:opacity-90"
-                style={{ backgroundColor: '#2E9F87', fontFamily: 'Inter, sans-serif' }}>
-                Request a Proposal
-              </Link>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/talk-to-sales"
+                  className="inline-block px-7 py-3.5 rounded-xl font-semibold text-white transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: '#2E9F87', fontFamily: 'Inter, sans-serif' }}>
+                  Talk to Sales
+                </Link>
+                <Link href="/signup"
+                  className="inline-block px-7 py-3.5 rounded-xl font-semibold transition-opacity hover:opacity-90"
+                  style={{ border: '2px solid rgba(255,255,255,0.5)', color: 'white', fontFamily: 'Inter, sans-serif', backgroundColor: 'transparent' }}>
+                  Employee Signup
+                </Link>
+              </div>
             </div>
             <div className="space-y-4">
               {[
@@ -193,7 +194,6 @@ export default function HomePage() {
 
       {/* ── FINAL CTA ── */}
       <section className="relative py-24 overflow-hidden" style={{ backgroundColor: '#DFF8F1' }}>
-        {/* Organic shape decorations */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -bottom-16 -right-16 w-64 h-64 rounded-full opacity-25" style={{ backgroundColor: '#2E9F87' }} />
           <div className="absolute top-8 left-8 w-32 h-32 rounded-full opacity-15" style={{ backgroundColor: '#0F6B57' }} />
@@ -203,13 +203,20 @@ export default function HomePage() {
             Your family deserves support. We&apos;re here to help.
           </h2>
           <p style={{ fontSize: '1.1rem', color: '#2C3E3A', lineHeight: 1.7, marginBottom: '2.5rem' }}>
-            Connect with a care navigator and get the support your family needs — at every stage of life.
+            Employees can sign up directly, or employers can book a demo to learn how Omohan works for your team.
           </p>
-          <Link href="/signup"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white text-lg transition-opacity hover:opacity-90"
-            style={{ backgroundColor: '#2E9F87', fontFamily: 'Inter, sans-serif' }}>
-            Get Care Support <ArrowRight className="w-5 h-5" />
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/signup"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white text-lg transition-opacity hover:opacity-90"
+              style={{ backgroundColor: '#2E9F87', fontFamily: 'Inter, sans-serif' }}>
+              Employee Signup <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link href="/talk-to-sales"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-lg transition-opacity hover:opacity-90"
+              style={{ border: '2px solid #0F6B57', color: '#0F6B57', fontFamily: 'Inter, sans-serif', backgroundColor: 'transparent' }}>
+              Talk to Sales
+            </Link>
+          </div>
         </div>
       </section>
 

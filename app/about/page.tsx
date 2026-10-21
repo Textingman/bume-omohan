@@ -75,7 +75,7 @@ export default function AboutPage() {
             {[
               { icon: Phone, step: '1', title: 'Connect Anytime', desc: 'Call, text, or message your navigator whenever you need help. No appointments, no waiting rooms.' },
               { icon: BookOpen, step: '2', title: 'Get Expert Guidance', desc: 'Your navigator researches options, vets providers, and creates a personalized care plan for your situation.' },
-              { icon: Heart, step: '3', title: 'Ongoing Support', desc: 'As your needs evolve, your navigator adapts your plan. We're with you for the long haul — not just a one-time call.' },
+              { icon: Heart, step: '3', title: 'Ongoing Support', desc: 'As your needs evolve, your navigator adapts your plan. We&apos;re with you for the long haul — not just a one-time call.' },
             ].map((item) => (
               <div key={item.step} className="text-center p-8 bg-white rounded-2xl border" style={{ borderColor: '#CCFBF1' }}>
                 <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-extrabold text-white" style={{ backgroundColor: '#2D7D6F' }}>
